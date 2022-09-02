@@ -19,12 +19,18 @@ header {
   justify-content: space-around;
   align-items: center;
 }
+header .hamburger{
+  display: none;
+}
 header nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 50vw;
   padding: 2vh;
+}
+.logo img{
+  width: 130px;
 }
 .btn {
   padding: 1vw 2vw;
@@ -233,4 +239,130 @@ footer li {
   font-size: 1em;
   font-weight: 600;
   color: #2b2b2b;
+}
+
+@media screen and (max-width:850px){
+  nav{
+    display: none;
+  }
+  header{
+    margin: 5px;
+  }
+  header .hamburger{
+    display: block;
+  }
+  .sec{
+    flex-direction: column;
+  }
+  .text-container {
+    width: 90%;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+  }
+  .text-container h1{
+    font-size: 40px;
+  }
+  .text-container p{
+    font-size: 20px;
+  }
+  .sec .img-container{
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .sec img{
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .sec-btn {
+    width: 150px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .sec-04 .cards {
+    flex-direction: column;
+}
+.sec-04 .cards .card {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.sec-04 .cards .card img {
+  width: 40%;
+}
+.sec-04 .cards .card h4 {
+  font-size: 21px;
+}
+.sec-04 .cards .card p {
+  font-size: 14px;
+  width: 80%;
+  margin: 10px auto;
+}
+.sec-04 .top {
+   flex-direction: column;
+   width: 90%;
+   margin: 0 auto;
+   text-align: center;
+}
+.sec-04 .top h1 {
+   font-size: 25px;
+   width: 100%;
+
+}
+.sec-04 .top p {
+   font-size: 20px;
+   width: 90%;
+}
+.sec-05 .pamplates{
+  flex-direction: column;
+  margin: 0 auto;
+}
+.sec-05 .heading{
+  text-align: center;
+  font-size: 35px;
+}
+.sec-05 .pamplates .pamplate{
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+.banner{
+  flex-direction: column;
+}
+.banner{
+  height: fit-content;
+  padding: 8px;
+}
+.banner .text-container{
+  padding: 35px;
+  margin: 10px;
+  width: 70%;
+}
+.text-container h1 {
+  font-size: 26px;
+}
+.text-container p {
+  font-size: 17px;
+}
+.banner .text-container .btn{
+  padding: 10px;
+}
+.sec-06 > p {
+    width: 90%;
+} 
+.sec-06 .cards {
+  flex-wrap: wrap;
+  width: 90%;
+}
+.sec-06 .cards .card {
+    background-color: #ffffff;
+    width: 99%;
+    border-radius: 10px;
+    padding: 1vw;
+    text-align: center;
+    margin: 10px;
+}
+footer .cols{
+  flex-wrap:wrap;
+}
 }
